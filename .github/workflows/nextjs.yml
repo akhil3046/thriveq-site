@@ -36,8 +36,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build and export static site
-        run: pnpm run export
+      - name: Build static site (output: export)
+        run: pnpm run build
         env:
           NEXT_PUBLIC_BASE_PATH: "/thriveq-site"
 
