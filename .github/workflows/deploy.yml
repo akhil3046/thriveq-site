@@ -39,9 +39,9 @@ jobs:
       - name: Build and export static site
         run: pnpm run export
         env:
-          # For a project page like `https://username.github.io/repo-name`,
-          # set this to "/repo-name". Leave empty for a user/organization site.
-          NEXT_PUBLIC_BASE_PATH: ""
+          # This repo is served at: https://akhil3046.github.io/thriveq-site
+          # so we set the base path accordingly.
+          NEXT_PUBLIC_BASE_PATH: "/thriveq-site"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
